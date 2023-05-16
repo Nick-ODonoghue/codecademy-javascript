@@ -33,6 +33,8 @@ This is a collection of all my notes taken whilst going through the Codecademy c
 
 [MDN - Math Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math)
 
+[Codecademy - Conditionals](https://www.codecademy.com/resources/docs/javascript/conditionals?page_ref=catalog)
+
 <br>
 
 ## Acknowledgments
