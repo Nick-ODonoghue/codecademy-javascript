@@ -6,7 +6,9 @@
 
 ## Overview
 
-This is a collection of all my notes taken whilst going through the Codecademy course Learn JavaScript.
+This is a collection of all my notes taken whilst going through the Codecademy course 'Learn JavaScript'.
+
+[Codecademy - Learn JavaScript](https://www.codecademy.com/learn/introduction-to-javascript)
 
 <br>
 
