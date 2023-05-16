@@ -1,4 +1,4 @@
-<h1 align="center">Title of Site | NickOD.xyz</h1>
+<h1 align="center">My Notes - Codecademy Learn JavaScript | NickOD.xyz</h1>
 
 ![Screenshot of site - COMING]()
 
