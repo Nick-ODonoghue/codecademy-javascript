@@ -681,6 +681,48 @@
     </section>
 
     <section>
+      <h2>Global Scope</h2>
+      <ul>
+        <li>Scope refers to the context in which variables are declared.</li>
+        <li>Variables can exist either outside of or within blocks.</li>
+        <li>Global scope refers to variables declared outside of blocks.</li>
+        <li>Global variables can be accessed by any code in the program, including code in blocks.</li>
+        <li>Global variables are not bound inside a block.</li>
+        <li>Example:</li>
+        <li>const color = 'blue';
+
+          const returnSkyColor = () => {
+          return color; // blue
+          };
+
+          console.log(returnSkyColor()); // blue</li>
+        <li>The console.log(returnSkyColor()) statement outputs "blue" because the color variable can be accessed within
+          the function block.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Block Scope</h2>
+      <ul>
+        <li>Block scope refers to the scope of variables defined inside a block, which is only accessible within that
+          block.</li>
+        <li>Variables declared with block scope are known as local variables.</li>
+        <li>Local variables are only available to the code within the same block.</li>
+        <li>Example:</li>
+        <li>const logSkyColor = () => {
+          let color = 'blue';
+          console.log(color); // Prints "blue"
+          };
+
+          logSkyColor(); // Prints "blue"
+          console.log(color); // throws a ReferenceError</li>
+        <li>Inside the logSkyColor function, the color variable is defined and can only be accessed within the function
+          block.</li>
+        <li>Trying to access the color variable outside the function block will throw a ReferenceError.</li>
+      </ul>
+    </section>
+
+    <section>
       <h2></h2>
       <ul>
         <li></li>
