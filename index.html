@@ -833,9 +833,6 @@
         <li>const hello = 'Hello World';
           console.log(hello[6]);
           // Output: W</li>
-        <li></li>
-        <li></li>
-        <li></li>
       </ul>
     </section>
 
@@ -962,6 +959,186 @@
         <li>Arrays mutated inside of a function will keep that change even outside the function. </li>
         <li>Arrays can be nested inside other arrays. </li>
         <li>To access elements in nested arrays chain indices using bracket notation. </li>
+        <li></li>
+        <li></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Loops Introduction</h2>
+      <ul>
+        <li>A loop is a programming tool that repeats a set of instructions until a specified condition, called a
+          stopping condition, is met.</li>
+        <li>Loops allow us to automate processes and make our code more efficient.</li>
+        <li>The term "iterate" is often used to describe the act of repeating a set of instructions in a loop.</li>
+        <li>Loops are commonly used when a task or process needs to be repeated multiple times in a row.</li>
+        <li>By using loops, we can create scalable and manageable programs.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>The For Loop</h2>
+      <ul>
+        <li>A for loop is a way to repeat a block of code by specifying an iterator variable, a stopping condition, and
+          an iteration statement.</li>
+        <li>The for loop syntax consists of three expressions separated by semicolons inside the parentheses:
+          initialization, stopping condition, and iteration statement.</li>
+        <li>The iterator variable is typically used to keep track of the loop iteration and is initialized before the
+          loop starts.</li>
+        <li>The stopping condition is evaluated before each iteration, and if it's true, the code block inside the loop
+          is executed. If it's false, the loop stops.</li>
+        <li>The iteration statement is executed after each iteration and is used to update the iterator variable.</li>
+        <li>The code block enclosed in curly braces is the code that will be repeated in each iteration.</li>
+        <li>The for loop allows us to write code that repeats a certain number of times based on the specified
+          conditions.</li>
+        <li>The iterator variable can have any name, but it's recommended to use a descriptive name for clarity.</li>
+        <li>The for loop provides an efficient and concise way to automate repetitive tasks in our code.</li>
+        <li>Example:</li>
+        <li>for (let counter = 0; counter < 4; counter++) { console.log(counter); }</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Looping in Reverse</h2>
+      <ul>
+        <li>To make a for loop run in reverse, we need to make some modifications to the expressions.</li>
+        <li>Set the iterator variable to the highest desired value in the initialization expression.</li>
+        <li>Set the stopping condition for when the iterator variable is less than the desired amount.</li>
+        <li>Decrease the iterator variable in intervals after each iteration.</li>
+        <li>By making these modifications, we can make the loop count down instead of counting up.</li>
+        <li>Be cautious of creating infinite loops, where the stopping condition is not met and the program gets stuck.
+          If this happens, refresh the page and fix the loop code.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Looping Through Arrays</h2>
+      <ul>
+        <li>for loops are useful for iterating over data structures like arrays.</li>
+        <li>To loop through each element in an array, use the array's .length property in the loop's condition.</li>
+        <li>Example:</li>
+        <li>const animals = ['Grizzly Bear', 'Sloth', 'Sea Lion'];
+          for (let i = 0; i < animals.length; i++) { console.log(animals[i]); } </li>
+        <li>The loop iterates through the array, and the iterator variable i represents the index of each element.</li>
+        <li>The loop stops when i is no longer less than animals.length.</li>
+        <li>Arrays are zero-indexed, so the last element's index is length - 1.Using for loops makes it easier to work
+          with elements in arrays.</li>
+        <li>Using for loops makes it easier to work with elements in arrays.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Nested Loops</h2>
+      <ul>
+        <li>Nested loops are loops that are placed inside another loop.</li>
+        <li>One use of nested loops is to compare elements in two arrays.</li>
+        <li>Example:</li>
+        <li>const myArray = [6, 19, 20];
+          const yourArray = [19, 81, 2];</li>
+        <li>for (let i = 0; i < myArray.length; i++) {</li>
+        <li>for (let j = 0; j < yourArray.length; j++) {</li>
+        <li>if (myArray[i] === yourArray[j]) {</li>
+        <li>console.log('Both arrays have the number: ' + yourArray[j]);}
+          }
+          }</li>
+        <li>In the nested loop, the inner loop runs completely for each iteration of the outer loop.</li>
+        <li>The inner loop compares the current element from the outer array (myArray[i]) with each element in the inner
+          array (yourArray[j]).</li>
+        <li>When a match is found, a string is printed to the console.</li>
+        <li>Nested loops are useful for performing comparisons and operations involving multiple arrays or data
+          structures.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>The While Loop</h2>
+      <ul>
+        <li>While loops are a type of loop in JavaScript.</li>
+        <li>They are used when we don't know in advance how many times the loop should run.</li>
+        <li>A while loop has a stopping condition that is evaluated before each round of the loop.</li>
+        <li>If the condition evaluates to true, the loop's code block will run, and if it evaluates to false, the loop
+          will stop.</li>
+        <li>It is important to include code inside the loop's block that updates the variables involved in the stopping
+          condition.</li>
+        <li>Without proper updates, the loop can result in an infinite loop, which can freeze the computer.</li>
+        <li>While loops are useful in situations where the number of iterations is not predetermined.</li>
+        <li>They allow the code to continue executing as long as the stopping condition remains true.</li>
+        <li>While loops are analogous to eating, where you continue eating while you're hungry without knowing the exact
+          number of bites needed to become full.</li>
+        <li>Example:</li>
+        <li>let counterTwo = 1;
+          while (counterTwo < 4) { console.log(counterTwo); counterTwo++; }</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Do..While Statements</h2>
+      <ul>
+        <li>The do...while statement is used when you want a piece of code to run at least once and then continue
+          running based on a specified condition.</li>
+        <li>The syntax for a do...while statement is do { // code block } while (condition);.</li>
+        <li>The code block inside the do keyword is executed once before the condition is evaluated.</li>
+        <li>If the condition is true, the code block will execute again. The loop continues until the condition
+          evaluates to false.</li>
+        <li>The do...while loop is different from the while loop because it always runs at least once, regardless of the
+          condition.</li>
+        <li>In contrast, the while loop may not run at all if the condition is false from the beginning.</li>
+        <li>It's important to ensure that the condition will eventually become false to avoid an infinite loop.</li>
+        <li>Example:</li>
+        <li>let countString = '';
+          let i = 0;</li>
+        <li>do {
+          countString = countString + i;
+          i++;
+          } while (i < 5);</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>The Break Keyword</h2>
+      <ul>
+        <li>The break keyword is used to exit a loop prematurely from within its block.</li>
+        <li>When encountered, the break statement immediately terminates the loop and continues executing the code
+          outside of the loop.</li>
+        <li>It is useful when you want to stop a loop from continuing to execute even if the original stopping condition
+          is not met.</li>
+        <li>The break statement can be used in loops such as for, while, and do...while.</li>
+        <li>It allows you to add additional test conditions inside the loop and exit the loop when those conditions are
+          met.</li>
+        <li>The use of break statements is particularly helpful when working with large data structures or when you want
+          to stop the loop based on specific conditions.</li>
+        <li>for (let i = 0; i < 99; i++) { if (i> 2 ) {
+            break;
+            }
+            console.log('Banana.');
+            }</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Review: Loops</h2>
+      <ul>
+        <li>Loops perform repetitive actions so we don’t have to code that process manually every time. </li>
+        <li>How to write for loops with an iterator variable that increments or decrements</li>
+        <li>How to use a for loop to iterate through an array</li>
+        <li>A nested for loop is a loop inside another loop</li>
+        <li>while loops allow for different types of stopping conditions</li>
+        <li>Stopping conditions are crucial for avoiding infinite loops.</li>
+        <li>do...while loops run code at least once— only checking the stopping condition after the first execution</li>
+        <li>The break keyword allows programs to leave a loop during the execution of its block</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2></h2>
+      <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
         <li></li>
         <li></li>
       </ul>
