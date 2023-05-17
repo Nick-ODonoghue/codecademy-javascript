@@ -413,7 +413,7 @@
     </section>
 
     <section>
-      <h2>Conditionals Review</h2>
+      <h2>Review: Conditionals</h2>
       <ul>
         <li>An if statement checks a condition and will execute a task if that condition evaluates to true.</li>
         <li>if...else statements make binary decisions and execute different code blocks based on a provided condition.
@@ -593,7 +593,7 @@
     </section>
 
     <section>
-      <h2>Review Functions</h2>
+      <h2>Review: Functions</h2>
       <ul>
         <li>A function is a reusable block of code that groups together a sequence of statements to perform a specific
           task.</li>
@@ -719,6 +719,94 @@
         <li>Inside the logSkyColor function, the color variable is defined and can only be accessed within the function
           block.</li>
         <li>Trying to access the color variable outside the function block will throw a ReferenceError.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Scope Polution</h2>
+      <ul>
+        <li>Having too many global variables can cause problems in a program</li>
+        <li>Global variables are accessible from anywhere in the program and remain there until the program finishes
+        </li>
+        <li>Scope pollution makes it difficult to keep track of different variables and can cause unexpected behavior in
+          the code</li>
+        <li>Best practice is to avoid defining variables in the global scope</li>
+        <li>let num = 50;
+
+          const logNum = () => {
+          num = 100; // Take note of this line of code
+          console.log(num);
+          };
+
+          logNum(); // Prints 100
+          console.log(num); // Prints 100</li>
+        <li>Inside the function body of logNum(), we want to declare a new variable but forgot to use the let keyword.
+        </li>
+        <li>When we call logNum(), num gets reassigned to 100.</li>
+        <li>The reassignment inside logNum() affects the global variable num.</li>
+        <li>Even though the reassignment is allowed and we won’t get an error, if we decided to use num later, we’ll
+          unknowingly use the new value of num.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Practice Good Scoping</h2>
+      <ul>
+        <li>Follow best practices for scoping variables tightly using block scope</li>
+        <li>Benefits of tightly scoping variables:</li>
+        <li>Improved code legibility and organization</li>
+        <li>Better code understanding and clarity</li>
+        <li>Easier code maintenance and modularity</li>
+        <li>Memory-saving as variables cease to exist after the block finishes running</li>
+        <li>Example of block scope within an if block:</li>
+        <li>const logSkyColor = () => {
+          const dusk = true;
+          let color = 'blue';
+          if (dusk) {
+          let color = 'pink';
+          console.log(color); // Prints "pink"
+          }
+          console.log(color); // Prints "blue"
+          };
+
+          console.log(color); // throws a ReferenceError</li>
+        <li>Variables declared inside the block are only accessible within the block</li>
+        <li>Reusing the same variable name inside the block can lead to namespace pollution</li>
+        <li>It's recommended to avoid defining variables in the global scope and use block scope instead</li>
+        <li>Block scope is a powerful tool in JavaScript, since it allows us to define variables with precision, and not
+          pollute the global namespace. If a variable does not need to exist outside a block— it shouldn’t!</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Review: Scope</h2>
+      <ul>
+        <li>Scope refers to where variables can be accessed throughout the program, and is determined by where and how
+          they are declared.</li>
+        <li>Blocks are statements that exist within curly braces {}. </li>
+        <li>Global scope refers to the context within which variables are accessible to every part of the program.</li>
+        <li>Global variables are variables that exist within global scope.</li>
+        <li>Block scope refers to the context within which variables are accessible only within the block they are
+          defined.</li>
+        <li>Local variables are variables that exist within block scope.</li>
+        <li>Global namespace is the space in our code that contains globally scoped information.</li>
+        <li>Scope pollution is when too many variables exist in a namespace or variable names are reused.</li>
+        <li></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2></h2>
+      <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
       </ul>
     </section>
 
