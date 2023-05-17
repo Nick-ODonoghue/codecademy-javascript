@@ -37,6 +37,8 @@ This is a collection of all my notes taken whilst going through the Codecademy c
 
 [MDN - Hoising](https://developer.mozilla.org/en-US/docs/Glossary/Hoisting)
 
+[MDN - Arrays](https://www.codecademy.com/resources/docs/javascript/arrays)
+
 <br>
 
 ## Acknowledgments
