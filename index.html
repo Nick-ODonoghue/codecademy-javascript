@@ -1370,6 +1370,121 @@
       </ul>
     </section>
 
+    <h2>Iterators</h2>
+
+    <section>
+      <h3>Introduction to Iterators</h3>
+      <ul>
+        <li>Iterators are built-in array methods in JavaScript used to loop through arrays.</li>
+        <li>They are also called iteration methods.</li>
+        <li>Iterators manipulate array elements and return values.</li>
+        <li>Iterators provide a more convenient and readable way to iterate over arrays compared to using a for loop.
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>The .forEach() Method</h3>
+      <ul>
+        <li>The .forEach() method is an iteration method used to loop through each element of an array.</li>
+        <li>It takes a callback function as an argument.</li>
+        <li>The callback function is executed for each element of the array, with the current element passed as an
+          argument.</li>
+        <li>The return value of .forEach() is always undefined.</li>
+        <li>Callback functions can be defined using arrow function syntax or regular function syntax.</li>
+        <li>It's a matter of preference which syntax to use for the callback function.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>The .map() Method</h3>
+      <ul>
+        <li>The .map() method is an iteration method used to create a new array based on an existing array.</li>
+        <li>It takes a callback function as an argument.</li>
+        <li>The callback function is executed for each element of the array, with the current element passed as an
+          argument.</li>
+        <li>The return value of the callback function is added to a new array.</li>
+        <li>The .map() method returns the new array.</li>
+        <li>The original array is not modified.</li>
+        <li>The new array can have a different length than the original array.</li>
+        <li>The elements of the new array are determined by the return values of the callback function.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>The .filter() Method</h3>
+      <ul>
+        <li>The .filter() method is an iteration method used to create a new array by filtering elements from an
+          existing array.</li>
+        <li>It takes a callback function as an argument.</li>
+        <li>The callback function is executed for each element of the array, with the current element passed as an
+          argument.</li>
+        <li>The callback function should return true or false based on a condition.</li>
+        <li>Elements that cause the callback function to return true are added to the new array.</li>
+        <li>The .filter() method returns the new array.</li>
+        <li>The original array is not modified.</li>
+        <li>The new array may have a different length than the original array.</li>
+        <li>The elements of the new array are determined by the return values of the callback function.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>The .findIndex() Method</h3>
+      <ul>
+        <li>The .findIndex() method is an iteration method used to find the index of the first element that satisfies a
+          given condition in an array.</li>
+        <li>It takes a callback function as an argument.</li>
+        <li>The callback function is executed for each element of the array, with the current element passed as an
+          argument.</li>
+        <li>The callback function should return true or false based on a condition.</li>
+        <li>The .findIndex() method returns the index of the first element that evaluates to true in the callback
+          function.</li>
+        <li>If no element satisfies the condition, .findIndex() returns -1.</li>
+        <li>The original array is not modified.</li>
+        <li>The index returned corresponds to the first occurrence of the element that meets the condition.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>The .reduce() Method</h3>
+      <ul>
+        <li>The .reduce() method is used to iterate through the elements of an array and return a single value.</li>
+        <li>It takes a callback function as an argument, which has two parameters: accumulator and currentValue.</li>
+        <li>The accumulator holds the accumulated value during the iteration process.</li>
+        <li>The currentValue represents the current element being processed in the array.</li>
+        <li>The .reduce() method iterates through the array, using the return value of the callback function as the
+          accumulator for the next iteration.</li>
+        <li>The initial value of the accumulator is the value of the first element in the array.</li>
+        <li>After each iteration, the return value of the callback function is added to the accumulator.</li>
+        <li>The process continues until all elements in the array have been processed.</li>
+        <li>The final value of the accumulator is returned as the result of the .reduce() method.</li>
+        <li>If an initial value for the accumulator is provided as a second argument to .reduce(), it will be used
+          instead of the first element of the array.</li>
+        <li>The .reduce() method can be useful for tasks such as summing the values in an array or performing other
+          cumulative calculations.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>Review: Iterators</h3>
+      <ul>
+        <li>.forEach() is used to execute the same code on every element in an array but does not change the array and
+          returns undefined. </li>
+        <li>.map() executes the same code on every element in an array and returns a new array with the updated
+          elements. </li>
+        <li>.filter() checks every element in an array to see if it meets certain criteria and returns a new array with
+          the elements that return truthy for the criteria. </li>
+        <li>.findIndex() returns the index of the first element of an array that satisfies a condition in the callback
+          function. It returns -1 if none of the elements in the array satisfies the condition. </li>
+        <li>.reduce() iterates through an array and takes the values of the elements and returns a single value. </li>
+        <li>All iterator methods take a callback function, which can be a pre-defined function, a function expression,
+          or an arrow function.</li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </section>
+
     <section>
       <h3></h3>
       <ul>
