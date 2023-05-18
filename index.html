@@ -1485,6 +1485,204 @@
       </ul>
     </section>
 
+    <h2>Objects</h2>
+
+    <section>
+      <h3>Introduction to Objects</h3>
+      <ul>
+        <li>Objects are a fundamental structure in JavaScript programming.</li>
+        <li>JavaScript heavily relies on objects, and many components of the language are objects or can behave like
+          objects.</li>
+        <li>There are seven fundamental data types in JavaScript, including six primitive data types and objects.</li>
+        <li>Objects provide more complex possibilities compared to primitive data types and allow us to model real-world
+          things and build data structures.</li>
+        <li>JavaScript objects are containers that store related data and functionality.</li>
+        <li>Despite their seemingly simple task, objects are powerful and widely used in JavaScript programming.</li>
+        <li>Understanding the mechanics of objects enables us to create our own objects and leverage their capabilities.
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>Creating Object Literals</h3>
+      <ul>
+        <li>Objects can be assigned to variables using object literals, denoted by curly braces {}.</li>
+        <li>Example:</li>
+        <li>let spaceship = {};</li>
+        <li>Object literals allow us to organize data into key-value pairs.</li>
+        <li>Keys in object literals are like variable names that point to a value.</li>
+        <li>Keys can be of any data type, including functions or other objects.</li>
+        <li>Key-value pairs are written as key: value, separated by commas.</li>
+        <li>Keys are typically strings, but when they don't have special characters, quotation marks can be omitted.
+        </li>
+        <li>Example:</li>
+        <li>let spaceship = { 'Fuel Type': 'diesel', color: 'silver' } defines an object with two properties:
+          'Fuel Type' and color.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>Accessing Properties</h3>
+      <ul>
+        <li>There are two ways to access an object's property.</li>
+        <li>The first way is using dot notation: objectName.propertyName.</li>
+        <li>Dot notation is used to access properties and methods of objects and data instances.</li>
+        <li>Example: 'hello'.length returns the length of the string, which is 5.</li>
+        <li>To access a property using dot notation, we write the object's name, followed by a dot (.), and then the
+          property name.</li>
+        <li>Example:</li>
+        <li>let spaceship = {
+          homePlanet: 'Earth',
+          color: 'silver'
+          };
+          spaceship.homePlanet; // Returns 'Earth'
+          spaceship.color; // Returns 'silver'
+        </li>
+        <li>If we try to access a property that does not exist on the object, undefined will be returned.</li>
+        <li>Example: spaceship.favoriteIcecream returns undefined.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>Bracket Notation</h3>
+      <ul>
+        <li>The second way to access an object's property is by using bracket notation: objectName['propertyName'].</li>
+        <li>Bracket notation is used when accessing keys that have numbers, spaces, or special characters in them.</li>
+        <li>To access an object's property using bracket notation, we pass the property name (key) as a string inside
+          the brackets.</li>
+        <li>Example:</li>
+        <li>let spaceship = {
+          'Fuel Type': 'Turbo Fuel',
+          'Active Duty': true,
+          homePlanet: 'Earth',
+          numCrew: 5
+          };
+          spaceship['Active Duty']; // Returns true
+          spaceship['Fuel Type']; // Returns 'Turbo Fuel'
+          spaceship['numCrew']; // Returns 5
+          spaceship['!!!!!!!!!!!!!!!']; // Returns undefined
+        </li>
+        <li>Bracket notation also allows us to use a variable inside the brackets to dynamically select the keys of an
+          object.</li>
+        <li>Example:</li>
+        <li>let returnAnyProp = (objectName, propName) => objectName[propName];
+          returnAnyProp(spaceship, 'homePlanet'); // Returns 'Earth'
+        </li>
+        <li>Using dot notation (objectName.propName) in this case would look for a key of 'propName' on the object
+          instead of using the value of the propName parameter.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>Property Assignment</h3>
+      <ul>
+        <li>Objects are mutable, meaning we can update them after creation.</li>
+        <li>Property assignment can be done using dot notation (.) or bracket notation ([]), along with the assignment
+          operator (=).</li>
+        <li>If the property already exists on the object, the assigned value will replace the previous value.</li>
+        <li>If there is no property with the given name, a new property will be added to the object.</li>
+        <li>It is possible to mutate an object declared with const by adding new properties or changing existing ones,
+          although the variable itself cannot be reassigned.</li>
+        <li>Example:</li>
+        <li>const spaceship = {type: 'shuttle'};
+          spaceship.type = 'alien'; // Changes the value of the type property
+          spaceship.speed = 'Mach 5'; // Creates a new key of 'speed' with a value of 'Mach 5'
+        </li>
+        <li>Properties can be deleted from an object using the delete operator.</li>
+        <li>Example:</li>
+        <li>const spaceship = {
+          'Fuel Type': 'Turbo Fuel',
+          homePlanet: 'Earth',
+          mission: 'Explore the universe'
+          };
+          delete spaceship.mission; // Removes the mission property
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>Methods</h3>
+      <ul>
+        <li>Methods are functions that are stored as properties of objects.</li>
+        <li>A property is what an object has, while a method is what an object does.</li>
+        <li>Global objects in JavaScript, such as console and Math, have methods like .log() and .floor().</li>
+        <li>Methods can be included in object literals by creating key-value pairs where the key is the method's name
+          and the value is a function expression.</li>
+        <li>Prior to ES6, the method syntax included the function keyword: methodName: function() { }.</li>
+        <li>In ES6, a shorter syntax is available for defining methods inside object literals: methodName () { }.</li>
+        <li>Example:</li>
+        <li>const alienShip = {
+          invade () {
+          console.log('Hello! We have come to dominate your planet. Instead of Earth, it shall be called New Xaculon.')
+          }
+          };</li>
+        <li>Object methods are invoked by using the object's name followed by the dot operator, the method name, and
+          parentheses.</li>
+        <li>Example:</li>
+        <li>const alienShip = {
+          invade: function() {
+          console.log('Hello! We have come to dominate your planet. Instead of Earth, it shall be called New Xaculon.');
+          }
+          };
+
+          alienShip.invade(); // Prints 'Hello! We have come to dominate your planet. Instead of Earth, it shall be
+          called New Xaculon.'
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>Nested Objects</h3>
+      <ul>
+        <li>Objects can be nested within other objects, creating a hierarchy of properties.</li>
+        <li>Nested objects allow for organizing and structuring complex data.</li>
+        <li>Each level of nesting can have its own properties and methods.</li>
+        <li>Accessing nested properties involves chaining operators to navigate through the object hierarchy.</li>
+        <li>To access a nested property, use dot notation or bracket notation for each level of nesting.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>Pass by Reference</h3>
+      <ul>
+        <li>Objects are passed by reference in JavaScript.</li>
+        <li>When an object is passed into a function as an argument, the parameter inside the function points to the
+          same memory location as the original object.</li>
+        <li>Modifying properties of the object inside the function will permanently change the object.</li>
+        <li>Reassigning the parameter inside the function will not affect the original variable that was passed in.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>Looping Through Objects</h3>
+      <ul>
+        <li>The for...in loop is used to iterate over the properties of an object.</li>
+        <li>It executes a given block of code for each property in the object.</li>
+        <li>Syntax:</li>
+        <li>for (let key in object) {
+          // code to be executed
+          }
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>Review: Objects</h3>
+      <ul>
+        <li>Objects store collections of key-value pairs.</li>
+        <li>Each key-value pair is a property—when a property is a function it is known as a method.</li>
+        <li>An object literal is composed of comma-separated key-value pairs surrounded by curly braces.</li>
+        <li>You can access, add or edit a property within an object by using dot notation or bracket notation.</li>
+        <li>We can add methods to our object literals using key-value syntax with anonymous function expressions as
+          values or by using the new ES6 method syntax.</li>
+        <li>We can navigate complex, nested objects by chaining operators. </li>
+        <li>Objects are mutable—we can change their properties even when they’re declared with const.</li>
+        <li>Objects are passed by reference— when we make changes to an object passed into a function, those changes are
+          permanent. </li>
+        <li>We can iterate through objects using the For...in syntax.</li>
+      </ul>
+    </section>
+
     <section>
       <h3></h3>
       <ul>
