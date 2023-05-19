@@ -210,6 +210,7 @@
         <li>Variables cannot start with numbers.</li>
         <li>Variable names are case-sensitive.</li>
         <li>Avoid using variable names that are the same as JavaScript keywords.</li>
+        <img src="./assets/images/variablesVar.jpg" alt="var variable">
       </ul>
     </section>
 
@@ -217,14 +218,12 @@
       <h3>Let Variables</h3>
       <ul>
         <li>The let keyword was introduced in ES6 and allows variables to be reassigned.</li>
-        <li>Example: let meal = 'Enchiladas';</li>
         <li>Variables declared with let can be reassigned to different values.</li>
-        <li>Example: meal = 'Burrito';</li>
+        <img src="./assets/images/variablesLet1.jpg" alt="let variable 1">
         <li>let variables can be declared without assigning an initial value.</li>
         <li>In such cases, the variable is automatically initialized with the value undefined.</li>
-        <li>Example: let price; console.log(price); prints undefined.</li>
         <li>The value of a price variable can be assigned later.</li>
-        <li>Example: price = 350; console.log(price); prints 350.</li>
+        <img src="./assets/images/variablesLet2.jpg" alt="let variable 2">
       </ul>
     </section>
 
@@ -232,7 +231,7 @@
       <h3>Const Variables</h3>
       <ul>
         <li>The const keyword was introduced in ES6 and is used to declare constant variables.</li>
-        <li>Example: const myName = 'Gilberto';</li>
+        <img src="./assets/images/variablesLConst.jpg" alt="const variable">
         <li>const variables cannot be reassigned once they are assigned a value.</li>
         <li>Attempting to reassign a const variable will result in a TypeError.</li>
         <li>const variables must be assigned a value when declared.</li>
@@ -246,13 +245,12 @@
       <h3>Mathematical Assignment</h3>
       <ul>
         <li>Mathematical assignment operators combine mathematical operations with variable assignment.</li>
-        <li>Example: w = w + 1; can be rewritten as w += 1;.</li>
+        <img src="./assets/images/mathematicalAssignmentOperators1.jpg" alt="mathematical operator 1">
         <li>The += operator adds a value to the variable and assigns the result back to the variable.</li>
+        <img src="./assets/images/mathematicalAssignmentOperators2.jpg" alt="mathematical operator 2">
         <li>Other mathematical assignment operators include -= (subtract and assign), *= (multiply and assign), and /=
           (divide and assign).</li>
-        <li>Example: x -= 5; is equivalent to x = x - 5;.</li>
-        <li>Example: y *= 2; is equivalent to y = y * 2;.</li>
-        <li>Example: z /= 2; is equivalent to z = z / 2;.</li>
+        <img src="./assets/images/mathematicalAssignmentOperators3.jpg" alt="mathematical operator 3">
       </ul>
     </section>
 
@@ -261,8 +259,8 @@
       <ul>
         <li>The increment operator (++) increases the value of a variable by 1.</li>
         <li>The decrement operator (--) decreases the value of a variable by 1.</li>
-        <li>Example: a++; increases the value of a by 1.</li>
-        <li>Example: b--; decreases the value of b by 1.</li>
+        <img src="./assets/images/increment.jpg" alt="increment operator">
+        <img src="./assets/images/decrement.jpg" alt="decrement operator">
         <li>The updated value of the variable is assigned as the new value of that variable.</li>
       </ul>
     </section>
@@ -271,7 +269,7 @@
       <h3>String Concatenation with Variables</h3>
       <ul>
         <li>The + operator can be used to concatenate strings in JavaScript.</li>
-        <li>Example: 'I own a pet ' + myPet + '.';</li>
+        <img src="./assets/images/stringConcatenationWithVariables.jpg" alt="string concatenation with a variable">
         <li>The value of the variable myPet is concatenated with other strings.</li>
         <li>The + operator combines multiple strings into one.</li>
         <li>The resulting concatenated string can be logged or used in other operations.</li>
@@ -283,7 +281,7 @@
       <ul>
         <li>In ES6, we can use template literals to interpolate variables into strings.</li>
         <li>Template literals are enclosed by backticks ( ).</li>
-        <li>Example: I own a pet ${myPet}..</li>
+        <img src="./assets/images/stringInterpolation.jpg" alt="string Interpolation">
         <li>Inside the template literal, we use ${} as a placeholder for the variable.</li>
         <li>The value of the variable myPet is inserted into the template literal.</li>
         <li>Template literals improve code readability and eliminate the need for escaping quotes.</li>
@@ -294,13 +292,11 @@
       <h3>typeof Operator</h3>
       <ul>
         <li>The typeof operator is used to check the data type of a value.</li>
-        <li>Example: typeof myName</li>
         <li>The typeof operator returns a string representing the data type of the value.</li>
-        <li>Example: typeof myName returns 'string'.</li>
         <li>It can be used to check the data type of variables or expressions.</li>
-        <li>Example: typeof 10 returns 'number'.</li>
         <li>Common data types returned by typeof are 'string', 'number', 'boolean', 'object', 'function', and
           'undefined'.</li>
+        <img src="./assets/images/typeofOperator.jpg" alt="typeof operators">
       </ul>
     </section>
 
@@ -346,7 +342,7 @@
         <li>If the condition evaluates to true, the code inside the block is executed.</li>
         <li>If the condition evaluates to false, the block is skipped.</li>
         <li>The code block is indicated by curly braces {}.</li>
-        <li>Example: if (true) { console.log('This message will print!'); }</li>
+        <img src="./assets/images/ifStatement.jpg" alt="if statement">
       </ul>
     </section>
 
@@ -364,11 +360,7 @@
         <li>If the condition evaluates to false, the code block inside the else statement is executed.</li>
         <li>The code blocks are indicated by curly braces {}.</li>
         <li>An if...else statement is used to make binary decisions.</li>
-        <li>if (condition) {
-          // code to run if condition is true
-          } else {
-          // code to run if condition is false
-          }</li>
+        <img src="./assets/images/ifElseStatement.jpg" alt="if else statement">
         <li></li>
       </ul>
     </section>
@@ -386,9 +378,8 @@
         <li>Is not equal to (!==)</li>
         <li>Comparison operators compare the value on the left with the value on the right</li>
         <li>The result of a comparison is either true or false</li>
-        <li>Examples:</li>
-        <li>10 < 12 evaluates to true.</li>
-        <li>'apples' === 'oranges' evaluates to false.</li>
+        <img src="./assets/images/comparisonOperators1.jpg" alt="comparison operator 1">
+        <img src="./assets/images/comparisonOperators2.jpg" alt="comparison operator 2">
         <li>Comparison statements are like questions, where a "yes" answer evaluates to true and a "no" answer evaluates
           to false.</li>
         <li>Comparison statements consist of two values being compared and an operator separating them.</li>
@@ -403,25 +394,9 @@
         <li>The and operator (&&) checks if two conditions are true.</li>
         <li>The or operator (||) checks if at least one condition is true.</li>
         <li>The not operator (!) reverses the boolean value.</li>
-        <li>Example of using the and operator:</li>
-        <li>if (stopLight === 'green' && pedestrians === 0) {
-          console.log('Go!');
-          } else {
-          console.log('Stop');
-          }</li>
-        <li>Example of using the or operator:</li>
-        <li>if (day === 'Saturday' || day === 'Sunday') {
-          console.log('Enjoy the weekend!');
-          } else {
-          console.log('Do some work.');
-          }</li>
-        <li>Example of using the not operator:</li>
-        <li>let excited = true;
-          console.log(!excited); // Prints false
-
-          let sleepy = false;
-          console.log(!sleepy); // Prints true
-        </li>
+        <img src="./assets/images/logicalOperators1.jpg" alt="logical AND operator">
+        <img src="./assets/images/logicalOperators2.jpg" alt="logical OR operator">
+        <img src="./assets/images/logicalOperators3.jpg" alt="logical NOT operator">
         <li>Logical operators help add more sophisticated logic to conditionals.</li>
       </ul>
     </section>
@@ -438,22 +413,9 @@
         <li>null</li>
         <li>undefined</li>
         <li>NaN (Not a Number)</li>
-        <li>let myVariable = 'I Exist!';
-
-          if (myVariable) {
-          console.log(myVariable);
-          } else {
-          console.log('The variable does not exist.');
-          }</li>
+        <img src="./assets/images/truthyFalsy1.jpg" alt="truthy falsy 1">
         <li>The code block in the if statement will run because myVariable has a truthy value.</li>
-        <li>Example with numbers:</li>
-        <li>let numberOfApples = 0;
-
-          if (numberOfApples) {
-          console.log('Let us eat apples!');
-          } else {
-          console.log('No apples left!');
-          }</li>
+        <img src="./assets/images/truthyFalsy2.jpg" alt="truthy falsy 2">
         <li>The condition evaluates to false because the value of numberOfApples is 0, which is a falsy value.</li>
 
       </ul>
@@ -464,24 +426,8 @@
       <ul>
         <li>When assigning a value to a variable based on a condition, you can use truthy and falsy evaluations to
           simplify the code.</li>
-        <li>Example with if...else statement:</li>
-        <li>let username = '';
-          let defaultName;
-
-          if (username) {
-          defaultName = username;
-          } else {
-          defaultName = 'Stranger';
-          }
-
-          console.log(defaultName); // Prints: Stranger
-        </li>
-        <li>Example with short-hand using logical operator:</li>
-        <li>let username = '';
-          let defaultName = username || 'Stranger';
-
-          console.log(defaultName); // Prints: Stranger
-        </li>
+        <img src="./assets/images/truthyFalsyAssignment1.jpg" alt="truthy falsy assignment 1">
+        <img src="./assets/images/truthyFalsyAssignment2.jpg" alt="truthy falsy assignment 2">
         <li>The logical OR operator (||) checks the left-hand condition first.</li>
         <li>If the left-hand condition (username) is truthy, it assigns the value of username to defaultName.</li>
         <li>If the left-hand condition is falsy, it assigns the value 'Stranger' to defaultName.</li>
@@ -495,11 +441,7 @@
         <li>Ternary operators provide a concise way to write conditional statements.</li>
         <li>Syntax: condition ? expression1 : expression2</li>
         <li>If the condition is true, expression1 is executed. If the condition is false, expression2 is executed.</li>
-        <li>Example:</li>
-        <li>let isNightTime = true;
-
-          isNightTime ? console.log('Turn on the lights!') : console.log('Turn off the lights!');
-        </li>
+        <img src="./assets/images/ternaryOperator.jpg" alt="ternary operator">
         <li>The ternary operator can be used as a shorthand alternative to if...else statements for simple conditions
           that evaluate to true or false.</li>
       </ul>
@@ -516,18 +458,7 @@
         <li>Once a condition evaluates to true, the corresponding block of code is executed and the rest of the
           conditions are skipped.</li>
         <li>If none of the conditions evaluate to true, the code in the else statement (if present) is executed.</li>
-        <li>Example:</li>
-        <li>let stopLight = 'yellow';
-
-          if (stopLight === 'red') {
-          console.log('Stop!');
-          } else if (stopLight === 'yellow') {
-          console.log('Slow down.');
-          } else if (stopLight === 'green') {
-          console.log('Go!');
-          } else {
-          console.log('Caution, unknown!');
-          }</li>
+        <img src="./assets/images/elseIfStatements.jpg" alt="else if statement">
         <li>In the example above, the code inside the else if statement stopLight === 'yellow' is executed because it
           evaluates to true.</li>
       </ul>
@@ -559,23 +490,7 @@
         </li>
         <li>The switch statement provides a more concise and readable way to handle multiple conditions compared to
           multiple else if statements.</li>
-        <li>Example:</li>
-        <li>let groceryItem = 'papaya';
-
-          switch (groceryItem) {
-          case 'tomato':
-          console.log('Tomatoes are $0.49');
-          break;
-          case 'lime':
-          console.log('Limes are $1.49');
-          break;
-          case 'papaya':
-          console.log('Papayas are $1.29');
-          break;
-          default:
-          console.log('Invalid item');
-          break;
-          }</li>
+        <img src="./assets/images/switchKeyword.jpg" alt="switch keyword">
         <li>In the example above, the switch statement evaluates the value of groceryItem and executes the code block
           corresponding to the matching case. Since groceryItem is 'papaya', the code inside the 'papaya' case block is
           executed.</li>
