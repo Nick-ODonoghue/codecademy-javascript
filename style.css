@@ -33,6 +33,14 @@ p {
   margin: var(--margin);
 }
 
+li {
+  font-size: 1.3rem;
+}
+
+img {
+  width: min(100%, 667px);
+}
+
 section {
   text-align: left;
   margin: var(--margin);
