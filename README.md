@@ -1,6 +1,6 @@
 <h1 align="center">My Notes - Codecademy Learn JavaScript | NickOD.xyz</h1>
 
-![Screenshot of site - COMING]()
+![Certificate of Completion](./assets/images/Codecademy%20-%20Learn%20JavaScript%20Certificate.jpg)
 
 <br>
 
@@ -12,9 +12,21 @@ This is a collection of all my notes taken whilst going through the Codecademy c
 
 <br>
 
+## Link to Live Site of Notes
+
+[Notes in HTML with Screenshots](https://nick-odonoghue.github.io/codecademy-javascript/)
+
+<br>
+
 ## Sticking Points & What I learned
 
-...
+this Keyword
+
+- Understanding that 'this' is refering to the calling object and it provides access to its properties was a good learning point.
+
+getters & setters
+
+- I also found the use of getters & setters to be particularly interesting. Using them as a way to both get data and set data made good sense after going throught the lectures.
 
 <br>
 
@@ -33,11 +45,13 @@ This is a collection of all my notes taken whilst going through the Codecademy c
 
 [MDN - Math Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math)
 
-[Codecademy - Conditionals](https://www.codecademy.com/resources/docs/javascript/conditionals?page_ref=catalog)
-
-[MDN - Hoising](https://developer.mozilla.org/en-US/docs/Glossary/Hoisting)
+[MDN - Hoisting](https://developer.mozilla.org/en-US/docs/Glossary/Hoisting)
 
 [MDN - Arrays](https://www.codecademy.com/resources/docs/javascript/arrays)
+
+[Codecademy - Conditionals](https://www.codecademy.com/resources/docs/javascript/conditionals?page_ref=catalog)
+
+[Codecademy - JavaScript Docs](https://www.codecademy.com/resources/docs/javascript)
 
 <br>
 
