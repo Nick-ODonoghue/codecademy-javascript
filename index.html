@@ -1343,17 +1343,14 @@
       <h3>Creating Object Literals</h3>
       <ul>
         <li>Objects can be assigned to variables using object literals, denoted by curly braces {}.</li>
-        <li>Example:</li>
-        <li>let spaceship = {};</li>
+        <img src="./assets/images/creatingObjectLiterals.jpg" alt="creating object literals">
         <li>Object literals allow us to organize data into key-value pairs.</li>
         <li>Keys in object literals are like variable names that point to a value.</li>
         <li>Keys can be of any data type, including functions or other objects.</li>
         <li>Key-value pairs are written as key: value, separated by commas.</li>
         <li>Keys are typically strings, but when they don't have special characters, quotation marks can be omitted.
         </li>
-        <li>Example:</li>
-        <li>let spaceship = { 'Fuel Type': 'diesel', color: 'silver' } defines an object with two properties:
-          'Fuel Type' and color.</li>
+        <img src="./assets/images/creatingObjectLiterals2.jpg" alt="creating object literals 2">
       </ul>
     </section>
 
@@ -1366,16 +1363,9 @@
         <li>Example: 'hello'.length returns the length of the string, which is 5.</li>
         <li>To access a property using dot notation, we write the object's name, followed by a dot (.), and then the
           property name.</li>
-        <li>Example:</li>
-        <li>let spaceship = {
-          homePlanet: 'Earth',
-          color: 'silver'
-          };
-          spaceship.homePlanet; // Returns 'Earth'
-          spaceship.color; // Returns 'silver'
-        </li>
+        <img src="./assets/images/accessingProperties.jpg" alt="accessing object properties">
         <li>If we try to access a property that does not exist on the object, undefined will be returned.</li>
-        <li>Example: spaceship.favoriteIcecream returns undefined.</li>
+        <img src="./assets/images/accessingProperties2.jpg" alt="accessing object properties 2">
       </ul>
     </section>
 
@@ -1386,24 +1376,10 @@
         <li>Bracket notation is used when accessing keys that have numbers, spaces, or special characters in them.</li>
         <li>To access an object's property using bracket notation, we pass the property name (key) as a string inside
           the brackets.</li>
-        <li>Example:</li>
-        <li>let spaceship = {
-          'Fuel Type': 'Turbo Fuel',
-          'Active Duty': true,
-          homePlanet: 'Earth',
-          numCrew: 5
-          };
-          spaceship['Active Duty']; // Returns true
-          spaceship['Fuel Type']; // Returns 'Turbo Fuel'
-          spaceship['numCrew']; // Returns 5
-          spaceship['!!!!!!!!!!!!!!!']; // Returns undefined
-        </li>
+        <img src="./assets/images/bracketNotation.jpg" alt="bracket notation">
         <li>Bracket notation also allows us to use a variable inside the brackets to dynamically select the keys of an
           object.</li>
-        <li>Example:</li>
-        <li>let returnAnyProp = (objectName, propName) => objectName[propName];
-          returnAnyProp(spaceship, 'homePlanet'); // Returns 'Earth'
-        </li>
+        <img src="./assets/images/bracketNotation2.jpg" alt="bracket notation 2">
         <li>Using dot notation (objectName.propName) in this case would look for a key of 'propName' on the object
           instead of using the value of the propName parameter.</li>
       </ul>
@@ -1419,20 +1395,9 @@
         <li>If there is no property with the given name, a new property will be added to the object.</li>
         <li>It is possible to mutate an object declared with const by adding new properties or changing existing ones,
           although the variable itself cannot be reassigned.</li>
-        <li>Example:</li>
-        <li>const spaceship = {type: 'shuttle'};
-          spaceship.type = 'alien'; // Changes the value of the type property
-          spaceship.speed = 'Mach 5'; // Creates a new key of 'speed' with a value of 'Mach 5'
-        </li>
+        <img src="./assets/images/propertyAssignment.jpg" alt="property assignment">
         <li>Properties can be deleted from an object using the delete operator.</li>
-        <li>Example:</li>
-        <li>const spaceship = {
-          'Fuel Type': 'Turbo Fuel',
-          homePlanet: 'Earth',
-          mission: 'Explore the universe'
-          };
-          delete spaceship.mission; // Removes the mission property
-        </li>
+        <img src="./assets/images/propertyAssignment2.jpg" alt="property assignment">
       </ul>
     </section>
 
@@ -1446,24 +1411,11 @@
           and the value is a function expression.</li>
         <li>Prior to ES6, the method syntax included the function keyword: methodName: function() { }.</li>
         <li>In ES6, a shorter syntax is available for defining methods inside object literals: methodName () { }.</li>
-        <li>Example:</li>
-        <li>const alienShip = {
-          invade () {
-          console.log('Hello! We have come to dominate your planet. Instead of Earth, it shall be called New Xaculon.')
-          }
-          };</li>
+        <img src="./assets/images/methodsInObjects2.jpg" alt="methods in properties">
         <li>Object methods are invoked by using the object's name followed by the dot operator, the method name, and
           parentheses.</li>
-        <li>Example:</li>
-        <li>const alienShip = {
-          invade: function() {
-          console.log('Hello! We have come to dominate your planet. Instead of Earth, it shall be called New Xaculon.');
-          }
-          };
-
-          alienShip.invade(); // Prints 'Hello! We have come to dominate your planet. Instead of Earth, it shall be
-          called New Xaculon.'
-        </li>
+        <img src="./assets/images/methodsInObjects.jpg" alt="methods in properties 2">
+        <img src="./assets/images/methodsInObjects3.jpg" alt="methods in properties 3">
       </ul>
     </section>
 
@@ -1473,8 +1425,10 @@
         <li>Objects can be nested within other objects, creating a hierarchy of properties.</li>
         <li>Nested objects allow for organizing and structuring complex data.</li>
         <li>Each level of nesting can have its own properties and methods.</li>
+        <img src="./assets/images/nestedObjects.jpg" alt="nested objects">
         <li>Accessing nested properties involves chaining operators to navigate through the object hierarchy.</li>
         <li>To access a nested property, use dot notation or bracket notation for each level of nesting.</li>
+        <img src="./assets/images/nestedObjects2.jpg" alt="nested objects 2">
       </ul>
     </section>
 
@@ -1485,7 +1439,9 @@
         <li>When an object is passed into a function as an argument, the parameter inside the function points to the
           same memory location as the original object.</li>
         <li>Modifying properties of the object inside the function will permanently change the object.</li>
+        <img src="./assets/images/passByReference.jpg" alt="pass by reference">
         <li>Reassigning the parameter inside the function will not affect the original variable that was passed in.</li>
+        <img src="./assets/images/passByReference2.jpg" alt="pass by reference 2">
       </ul>
     </section>
 
@@ -1499,6 +1455,7 @@
           // code to be executed
           }
         </li>
+        <img src="./assets/images/loopingThroughObjects.jpg" alt="looping through objects">
       </ul>
     </section>
 
@@ -1524,18 +1481,165 @@
       </p>
     </section>
 
+    <h2>Advanced Objects</h2>
+
     <section>
-      <h3></h3>
+      <h3>The this Keyword</h3>
       <ul>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
+        <li>Objects in JavaScript store data and functionality.</li>
+        <li>Methods are functions stored as properties in objects.</li>
+        <li>The this keyword refers to the calling object and provides access to its properties.</li>
+        <li>Inside a method, this can be used to access other properties of the object.</li>
+        <li>Without using this, properties may not be accessible within the method's scope.</li>
+        <img src="./assets/images/thisKeyword.jpg" alt="this keyword">
+        <li>By using this, properties can be accessed using property dot notation.</li>
+        <img src="./assets/images/thisKeyword2.jpg" alt="this keyword 2">
+      </ul>
+    </section>
+
+    <section>
+      <h3>Arrow Functions & this</h3>
+      <ul>
+        <li>Arrow functions inherently bind, or tie, an already defined this value to the function itself that is NOT
+          the calling object.</li>
+        <li>When using an arrow function for a method, the value of this will not refer to the calling object.</li>
+        <img src="./assets/images/arrowFunctions&this.jpg" alt="arrow functions and this keyword">
+        <li>Invoking goat.diet() will print undefined because this.dietType refers to the dietType property of the
+          global object, not the goat object.</li>
+        <li>Arrow functions are not suitable for methods that rely on accessing the calling object's properties using
+          this.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>Privacy</h3>
+      <ul>
+        <li>Privacy in objects refers to the idea that only certain properties should be mutable or able to change in
+          value.</li>
+        <li>JavaScript does not have built-in privacy features for objects.</li>
+        <li>Developers often use naming conventions, such as prefixing a property with an underscore (_), to indicate
+          that it should not be directly manipulated.</li>
+        <img src="./assets/images/privacy.jpg" alt="privacy">
+        <li>However, it is still possible to reassign a property that has an underscore prefix.</li>
+        <img src="./assets/images/privacy2.jpg" alt="privacy 2">
+      </ul>
+    </section>
+
+    <section>
+      <h3>Getters</h3>
+      <ul>
+        <li>Getters are methods that retrieve and return the internal properties of an object.</li>
+        <li>They are defined using the get keyword followed by a function.</li>
+        <li>Getters can perform actions on the data before returning a value.</li>
+        <li>They can return different values based on conditions.</li>
+        <li>Within a getter, the properties of the calling object can be accessed using this.</li>
+        <img src="./assets/images/getters.jpg" alt="getters">
+        <li>Getters improve code readability and understanding for other developers.</li>
+        <li>It is important to avoid having a property with the same name as the getter function to prevent infinite
+          call stack errors. One solution is to prefix the property name with an underscore.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>Setters</h3>
+      <ul>
+        <li>Setters are methods that reassign values of existing properties within an object.</li>
+        <li>They are defined using the set keyword followed by a function.</li>
+        <li>Setters can perform checks or validations on the new value before assigning it to the property.</li>
+        <img src="./assets/images/setters.jpg" alt="setters">
+        <li>When using the setter method, the assignment can be done directly without the need for parentheses.</li>
+        <img src="./assets/images/setters2.jpg" alt="setters 2">
+        <li>Setter methods provide advantages such as input validation, performing actions on properties, and indicating
+          the intended usage of the object.</li>
+        <li>However, it is still possible to directly reassign properties even when a setter method is defined.</li>
+        <img src="./assets/images/setters3.jpg" alt="setters 3">
+        <li>Directly reassigning properties bypasses any validations or actions defined in the setter method.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>Factory Functions</h3>
+      <ul>
+        <li>Factory functions are functions that return objects and can be used to create multiple instances of an
+          object quickly.</li>
+        <li>They allow us to customize the properties of the objects by passing parameters to the factory function.</li>
+        <li>The factory function can create and return an object with the desired properties and methods.</li>
+        <img src="./assets/images/factoryFunctions.jpg" alt="factory functions">
+        <li>By using a factory function, we can avoid manually creating object literals each time we need a new object
+          instance.</li>
+        <li>We can invoke the factory function with the necessary arguments to create an object with specific
+          characteristics.</li>
+        <img src="./assets/images/factoryFunctions2.jpg" alt="factory functions 2">
+        <li>The factory function can be reused to create multiple objects with different configurations.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>Property Value Shorthand</h3>
+      <ul>
+        <li>Property value shorthand is a destructuring technique in ES6 that allows us to assign properties to
+          variables without repeating the property name.</li>
+        <li>When the property name and the variable name are the same, we can omit the property name and only specify
+          the variable name.</li>
+        <img src="./assets/images/propertyValueShorthand.jpg" alt="property value shorthand">
+        <li>This shorthand syntax helps to reduce the amount of repetitive code when assigning properties to variables
+          in object literals or factory functions.</li>
+        <img src="./assets/images/propertyValueShorthand2.jpg" alt="property value shorthand 2">
+        <li>It improves code readability and makes the code more concise.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>Destructured Assignment</h3>
+      <ul>
+        <li>Destructured assignment is a technique in JavaScript that allows us to extract key-value pairs from objects
+          and assign them to variables in a concise way.</li>
+        <img src="./assets/images/destructuredAssignment.jpg" alt="destructuring assigment">
+        <img src="./assets/images/destructuredAssignment2.jpg" alt="destructuring assignment 2">
+        <li>With destructured assignment, we can create a variable with the same name as the object's key wrapped in
+          curly braces { } and assign it the object we want to destructure.</li>
+        <img src="./assets/images/destructuredAssignment3.jpg" alt="destructuring assignment">
+        <li>This technique helps us save keystrokes and improves code readability.</li>
+        <li>We can use destructured assignment to extract properties from nested objects by specifying the nested key
+          path.</li>
+        <img src="./assets/images/destructuredAssignment4.jpg" alt="destructur assignment">
+        <li>Destructured assignment is particularly useful when we only need to extract a few specific properties from
+          an object.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>Built-In Object Methods</h3>
+      <ul>
+        <li>JavaScript provides built-in methods for objects that can be used to perform various operations.</li>
+        <li>Object instance methods are methods that can be called on individual object instances.</li>
+        <li>Examples of object instance methods include .hasOwnProperty(), .valueOf(), and more.</li>
+        <li>These methods allow us to perform specific actions or retrieve specific information from objects.</li>
+        <li>Object class methods are methods that can be called directly on the Object class itself.</li>
+        <li>Examples of object class methods include Object.assign(), Object.entries(), and Object.keys().</li>
+        <li>Object class methods are used for operations that involve multiple objects or general object manipulation.
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>Review: Advanced Objects</h3>
+      <ul>
+        <li>The object that a method belongs to is called the calling object.</li>
+        <li>The this keyword refers to the calling object and can be used to access properties of the calling object.
+        </li>
+        <li>Methods do not automatically have access to other internal properties of the calling object.</li>
+        <li>The value of this depends on where the this is being accessed from. </li>
+        <li>We cannot use arrow functions as methods if we want to access other internal properties.</li>
+        <li>JavaScript objects do not have built-in privacy, rather there are conventions to follow to notify other
+          developers about the intent of the code. </li>
+        <li>The usage of an underscore before a property name means that the original developer did not intend for that
+          property to be directly changed. </li>
+        <li>Setters and getter methods allow for more detailed ways of accessing and assigning properties.</li>
+        <li>Factory functions allow us to create object instances quickly and repeatedly. </li>
+        <li>There are different ways to use object destructuring: one way is the property value shorthand and another is
+          destructured assignment. </li>
+        <li>As with any concept, it is a good skill to learn how to use the documentation with objects! </li>
       </ul>
     </section>
 
